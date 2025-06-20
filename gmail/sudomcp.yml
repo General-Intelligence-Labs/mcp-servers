@@ -6,7 +6,7 @@ logo_url: "https://github.com/General-Intelligence-Labs/mcp-servers/blob/master/
 stdio_server_params:
   command: "npx"
   args:
-    - "@sudomcp/server-gmail-autoauth-mcp"
+    - "@xalia/gmail-mcp"
     - "--host-auth"
   env:
     "GMAIL_API_ACCESS_TOKEN": "$ACCESS_TOKEN"

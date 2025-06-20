@@ -1,7 +1,7 @@
 name: supabase
 title: Supabase
 description: Connect your Supabase projects to AI assistants
-logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/supabase-mcp/icon.png?raw=true"
+logo_url: "https://github.com/General-Intelligence-Labs/mcp-servers/blob/master/supabase-mcp/icon.png?raw=true"
 config_schema:
   supabase_access_token:
     type: string

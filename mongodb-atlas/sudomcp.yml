@@ -1,7 +1,7 @@
 name: mongodb-atlas
 title: MongoDB
 description: MCP server for interacting with a hosted MongoDB instance on Atlas
-logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/mongodb-atlas/logo.png?raw=true"
+logo_url: "https://github.com/General-Intelligence-Labs/mcp-servers/blob/master/mongodb-atlas/logo.png?raw=true"
 config_schema:
   atlas_client_id:
     type: string

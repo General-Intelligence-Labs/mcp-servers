@@ -2,7 +2,7 @@ name: exa-search
 title: Exa
 description: |
   Use the Exa AI Search API to get real-time web information in a safe and controlled way.  See [here](https://dashboard.exa.ai/api-keys) to obtain an API key.
-logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/exa/logo.png?raw=true"
+logo_url: "https://github.com/General-Intelligence-Labs/mcp-servers/blob/master/exa/logo.png?raw=true"
 url: "https://github.com/exa-labs/exa-mcp-server"
 config_schema:
   exa_api_key:

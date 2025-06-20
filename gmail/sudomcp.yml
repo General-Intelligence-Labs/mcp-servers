@@ -2,7 +2,7 @@ name: gmail
 title: Gmail
 enabled: true
 description: Read, write, and send emails from Gmail
-logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/gmail/logo.png?raw=true"
+logo_url: "https://github.com/General-Intelligence-Labs/mcp-servers/blob/master/gmail/logo.png?raw=true"
 stdio_server_params:
   command: "npx"
   args:

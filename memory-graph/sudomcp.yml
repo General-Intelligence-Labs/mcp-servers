@@ -1,7 +1,7 @@
 name: memory-graph
 title: Memory Graph
 description: Local memory graphs for persistent knowledge across chats.
-logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/memory-graph/logo.png?raw=true"
+logo_url: "https://github.com/General-Intelligence-Labs/mcp-servers/blob/master/memory-graph/logo.png?raw=true"
 config_schema:
   memory_file_path:
     type: string

@@ -2,7 +2,7 @@ name: notion
 title: notion
 enabled: true
 description: "MCP server that allows AI agents to use the Notion API to add and retrieve context in Notion."
-logo_url: "https://github.com/sudobase-ai/mcp-servers/blob/master/notion/logo.png?raw=true"
+logo_url: "https://github.com/General-Intelligence-Labs/mcp-servers/blob/master/notion/logo.png?raw=true"
 stdio_server_params:
   command: "npx"
   args:

@@ -2,23 +2,16 @@ name: google-drive
 title: Google Drive
 description: Integrates with Google Drive to allow listing, reading, and searching files, as well as the ability to read and write to Google Sheets.
 logo_url: "https://github.com/General-Intelligence-Labs/mcp-servers/blob/master/google-drive/logo.png?raw=true"
-local: true
-config_schema:
-  client_id:
-    type: string
-    description: OAuth Client ID
-  client_secret:
-    type: string
-    description: OAuth Client Secret
-  gdrive_creds_dir:
-    type: string
-    description: Directory containing OAuth credentials JSON file
 stdio_server_params:
   command: "npx"
   args:
-    - "-y"
-    - "@isaacphi/mcp-gdrive"
+    - "@xalia/mcp-gdrive"
+    - "--host-auth"
   env:
-    CLIENT_ID: $client_id
-    CLIENT_SECRET: $client_secret
-    GDRIVE_CREDS_DIR: $gdrive_creds_dir
+    "GOOGLE_API_ACCESS_TOKEN": "$ACCESS_TOKEN"
+authentication:
+  client_id: "995873111121-isela6se752bfm4t7ubn0djki9v3pv14.apps.googleusercontent.com"
+  scope: "https://www.googleapis.com/auth/drive.readonly https://www.googleapis.com/auth/spreadsheets"
+  authenticate_url: "https://accounts.google.com/o/oauth2/auth"
+  access_token_url: "https://oauth2.googleapis.com/token"
+  introspect_get: "https://www.googleapis.com/oauth2/v1/tokeninfo"

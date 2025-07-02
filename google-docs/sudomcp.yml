@@ -1,0 +1,17 @@
+name: google-docs
+title: Google Docs
+description: Integrates with Google Docs to make direct edits and formatting. Use cases include writing notes, letters, resumes, creating tables, etc.
+logo_url: "https://github.com/General-Intelligence-Labs/mcp-servers/blob/master/google-docs/logo.png?raw=true"
+stdio_server_params:
+  command: "npx"
+  args:
+    - "@xalia/mcp-googledocs-server"
+    - "--host-auth"
+  env:
+    "GOOGLE_API_ACCESS_TOKEN": "$ACCESS_TOKEN"
+authentication:
+  client_id: "995873111121-isela6se752bfm4t7ubn0djki9v3pv14.apps.googleusercontent.com"
+  scope: "https://www.googleapis.com/auth/documents https://www.googleapis.com/auth/drive"
+  authenticate_url: "https://accounts.google.com/o/oauth2/auth"
+  access_token_url: "https://oauth2.googleapis.com/token"
+  introspect_get: "https://www.googleapis.com/oauth2/v1/tokeninfo"

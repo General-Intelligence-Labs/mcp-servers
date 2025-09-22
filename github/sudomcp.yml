@@ -1,0 +1,12 @@
+name: github
+title: "Github"
+description: "Interact with github repositories.  Create a [Personal Access Token](https://github.com/settings/personal-access-tokens/new) with only persmissions required by your use-case."
+config_schema:
+  github_pat:
+    type: string
+    description: Github PAT (Personal Access Token)
+stdio_server_params:
+  command: "./run.sh"
+  cwd: .
+  env:
+    GITHUB_PERSONAL_ACCESS_TOKEN: ${github_pat}

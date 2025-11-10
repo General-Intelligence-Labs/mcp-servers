@@ -1,4 +1,4 @@
-# sudobase-ai MCP Servers
+# Xalia MCP Servers
 
 ## Adding servers
 

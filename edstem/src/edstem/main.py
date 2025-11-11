@@ -9,6 +9,7 @@ import os
 import sys
 import json
 import logging
+import asyncio
 from typing import Any
 from mcp.server import Server
 from mcp.types import Tool, TextContent, Resource, EmbeddedResource
@@ -438,7 +439,7 @@ async def call_tool(name: str, arguments: Any) -> list[TextContent]:
         logger.exception(error_msg)
         return [TextContent(type="text", text=error_msg)]
 
-async def main():
+async def _run_server():
     """Main entry point for the server."""
     from mcp.server.stdio import stdio_server
 
@@ -449,6 +450,11 @@ async def main():
             server.create_initialization_options()
         )
 
+
+def main() -> None:
+    """CLI entry point for the MCP server."""
+    asyncio.run(_run_server())
+
+
 if __name__ == "__main__":
-    import asyncio
-    asyncio.run(main())
+    main()

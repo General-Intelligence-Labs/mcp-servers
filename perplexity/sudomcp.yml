@@ -1,4 +1,4 @@
-name: jsonallen/perplexity
+name: perplexity
 title: Perplexity Web Search
 description: >
   Provides web search functionality using Perplexity AI's API.
